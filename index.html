@@ -2,14 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        a.author:hover, a.author:active {
+            color: red;
+            font-size: 150%;
+            transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition */
+        }
+    </style>
 </head>
+
 <body>
     <h1>Welcome to My Website</h1>
+    <!-- Closing the <a> tag properly -->
+    <h2><a class="author" href="default.asp">Author</a></h2>
+    
+    <!-- Fixed the image URL, and added alt text for accessibility -->
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/66965d8a-d7e4-42b9-89fa-dfb517a0824a/daym28h-182beffe-abd8-4256-a328-729fdd91ff4e.jpg/v1/fill/w_768,h_1040,q_70,strp/enril___tiefling_warlock_by_artlon_daym28h-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MSIsInBhdGgiOiJcL2ZcLzY2OTY1ZDhhLWQ3ZTQtNDJiOS04OWZhLWRmYjUxN2EwODI0YVwvZGF5bTI4aC0xODJiZWZmZS1hYmQ4LTQyNTYtYTMyOC03MjlmZGQ5MWZmNGUuanBnIiwid2lkdGgiOiI8PTc5OSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.HnyQk6GVgm3TBEnEwmV-tCyeb3FjvTR3OesyGqLpiks" 
+         style="width: 100px;" alt="Tiefling Warlock">
+    <br><br>
+    
+    <!-- Paragraph content -->
     <p>This is a simple webpage hosted on GitHub Pages.</p>
+    
+    <!-- Buttons with functions to click -->
     <button onclick="sayHello()">Click me</button>
+    <br><br>
+    <button onclick="dontclick()">Don't Click</button>
+    
+    <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
+
+    <!-- Canvas element -->
+    <canvas class="from-yellow" height="300" width="2520"></canvas>
 </body>
 </html>
