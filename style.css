@@ -2,13 +2,11 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;
-    background: linear-gradient(to bottom, #6eb5ff, #4a83d3, #2a64b4, #093c81);
-    min-height: 100vh; /* Ensure it covers the full height of the viewport */
-    margin: 0;
+    background-color: #f0f0f0;
 }
 
 h1 {
-    color: #1a1a1a;
+    color: #333;
 }
 
 button {
