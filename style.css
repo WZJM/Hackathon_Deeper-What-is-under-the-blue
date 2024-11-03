@@ -90,7 +90,49 @@ button {
 }
 
 .Title {
+    font-weight: 700;
     color: #dde3f8;
     text-align: center;
-    margin-left: auto;
+    vertical-align: middle;
+    line-height: 100px;
 }
+
+.subTitle {
+    font-weight: 600;
+    color: #dde3f8;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.pop-text {
+    font-size: 20px;
+    display: inline-block;
+    animation: popAnimation 0.5s ease-in infinite;
+}
+
+@keyframes popAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.pop-image {
+    font-size: 20px;
+    display: inline-block;
+    animation: popImageAnimation 1s ease-in infinite;
+}
+
+@keyframes popImageAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* -- slide image -- */
