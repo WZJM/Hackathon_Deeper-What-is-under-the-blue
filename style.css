@@ -103,16 +103,31 @@ button {
     }
 }
 
+
 .appearAnimation1.in-view {
-animation: appear 1s ease both;
+animation: appear 1s ease forwards;
 }
 
 .appearAnimation2.in-view {
-    animation: appear 1s ease both;
+    animation: appear 1s ease forwards;
     }
+
+.appearAnimation3.in-view {
+    animation: appear 1s ease forwards;
+    }
+
+.appearAnimation4.in-view {
+    animation: appear 1s ease forwards;
+    }
+
+.appearAnimation5.in-view {
+    animation: appear 1s ease forwards;
+    }
+
 .paragraph {
     font-size:20px;
     text-align:left;
+    margin-top: 20px;
     margin-left: 150px;
     margin-right: 150px;
 }
