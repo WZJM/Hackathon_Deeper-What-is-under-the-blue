@@ -5,84 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deeper</title>
-    <title>Deeper</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
     <style>
         
     </style>
 </head>
 
-
 <body>
     <div class="blank-area">
-        <div class="center">
-    <h1 class="Title">Welcome to Deeper</h1>
-    <h2 class="Title" style="font-size:medium;">Leading you to the deepest ocean</h2>
+        <span style="font-size: 50px;" class="Title">Deeper </span> <span style="font-size: 25px;" class="subTitle" >what's under the blue</span>
 </div>
 </div>
 
-    <!-- button group -->
+      <!-- button group -->
 <div class="info-background">
     <div class="center">
-    <button class="Author">Author</button>
-    <button class="Author">About</button>
+    <button onclick="author()" class="Author">Author</button>
+    &nbsp;&nbsp;&nbsp;
+    <button onclick="about()" class="Author">About</button>
+    &nbsp;&nbsp;&nbsp;
+    <button onclick="document.location='https://github.com/WZJM/Hackathon'" class="Author">GitHub</button>
     </div>
 </div>
 
-    <br><br>
-    
-    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/66965d8a-d7e4-42b9-89fa-dfb517a0824a/daym28h-182beffe-abd8-4256-a328-729fdd91ff4e.jpg/v1/fill/w_768,h_1040,q_70,strp/enril___tiefling_warlock_by_artlon_daym28h-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MSIsInBhdGgiOiJcL2ZcLzY2OTY1ZDhhLWQ3ZTQtNDJiOS04OWZhLWRmYjUxN2EwODI0YVwvZGF5bTI4aC0xODJiZWZmZS1hYmQ4LTQyNTYtYTMyOC03MjlmZGQ5MWZmNGUuanBnIiwid2lkdGgiOiI8PTc5OSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.HnyQk6GVgm3TBEnEwmV-tCyeb3FjvTR3OesyGqLpiks" 
-         style="width: 200px;" alt="Tiefling Warlock">
     <br><br>
     
     <img src="https://hdqwalls.com/wallpapers/ocean-waves-at-sunset.jpg" 
-    style="width: 500px;;" alt="sea" class="pop-image">
-<br><br>
-
-<!-- Paragraph content -->
-<h1 class="pop-text">Scroll down to dive</h1>
+         style="width: 500px;;" alt="sea">
+    <br><br>
+    
 
 
-
-    <div class="gradient-background">
-        <h1>--Epipelagic Zone (Sunlight Zone)--</h1>
-        <canvas class="leavewhite" height="70" width="1"></canvas>
+    <!-- Paragraph content -->
+    <h1 class="pop-text">Scroll down to dive</h1>
+    <br>
+    <div class="gradient-background ">
+        <h1 class="Epipelagic">--Epipelagic Zone (Sunlight Zone)--</h1>
+        <canvas class="leavewhite Epipelagic" height="70" width="1"></canvas>
         <div class="appearAnimation1 paragraph"><em>Jellyfish, Sea turtle, Dolphin and Blue whale usually live in this Sunlight zone.</em><br>
             It cover roughly 5% of the ocean's average depth, it is the warmest of all layers, most visible light can penetrate this layer.<br>
             Due to the light and warmth, all sort of life live in this layer, such as seaweeds, coral reefs. This layer create around 50% of the atmospheric oxygen.</div>
-        
-        <h1>--Mesopelagic Zone (Twilight Zone)--</h1>
+            <img src="https://pluspng.com/img-png/dolphin-png-dolphin-png-transparent-image-1294.png" alt="dolphin" width="500"
+            class="pop-image">
+
+        <h1 class="Mesopelagic">--Mesopelagic Zone (Twilight Zone)--</h1>
         <canvas class="leavewhite" height="70" width="1"></canvas>
-        <div class="appearAnimation2 paragraph"><em>Crab, Octopus, Swordfish, Wolf ell and catshark live in this zone.</em><br>
+        <div class="appearAnimation2 paragraph Mesopelagic"><em>Crab, Octopus, Swordfish, Wolf ell and catshark live in this zone.</em><br>
             Only faint light reaches this zone, due to lack of light, living creature begin to glow. No plants grow within this layer, so creatures either feed by filtering the water or hunting other creature.<br>
             Human need to wear protection suits due to high pressure and lack of heat.</div>
-        
-        <h1>--Bathypelagic zone (Midnight Zone)--</h1>
+            <img src="https://www.pngmart.com/files/5/Crab-PNG-Image.png" alt="dolphin" width="500"
+            class="pop-image">
+            
+        <h1 class="Bathypelagic">--Bathypelagic zone (Midnight Zone)--</h1>
         <canvas class="leavewhite" height="70" width="1"></canvas>
-        <div class="appearAnimation3 paragraph"><em>Blobfish, Squid, Viperfish, Anglerfish and Titanic.</em><br> 
+        <div class="appearAnimation3 paragraph Bathypelagic"><em>Blobfish, Squid, Viperfish, Anglerfish and Titanic.</em><br> 
             It makes up almost 90 percent of the ocean, it is called the midnight zone because of the midnight zone because of the complete absence of light. The only light found in this layer is obtained from animals’ bioluminescence, which they utilize in search of their food.<br> 
             The bathypelagic zone temperature is constant around 4°C.</div>
-        
-        <h1>--Abyssopelagic zone (The abyss)--</h1>
+            <img src="https://e3.365dm.com/22/09/2048x1152/skynews-titanic-oceangate_5882923.jpg?20220901042146" alt="dolphin" width="500"
+            class="pop-image">
+
+        <h1 class="Abyssopelagic">--Abyssopelagic zone (The abyss)--</h1>
         <canvas class="leavewhite" height="70" width="1"></canvas>
-        <div class="appearAnimation4 paragraph"><em>Sea stars, shrimps and squids.</em><br>
+        <div class="appearAnimation4 paragraph Abyssopelagic"><em>Sea stars, shrimps and squids.</em><br>
             It is the pitch black bottom layer of the ocean as no sunlight reaches this layer. It is covered with thick layers of mud, sand and rocks made form dead plants and animals 'remains.<br>
             The water temperature is near freezing, only a small number of creature are found at such depths.</div>
-        <h1>--Hadalpelagic Zone (the Trenches)--</h1>
+            <img src="https://silvermagazine.ca/wp-content/uploads/2020/09/sea-cucumber.png" alt="dolphin" width="500"
+            class="pop-image">
+
+        <h1 class="Hadalpelagic">--Hadalpelagic Zone (the Trenches)--</h1>
         <canvas class="leavewhite" height="70" width="1"></canvas>
-        <div class="appearAnimation5 paragraph"><em>Starfish, Liparid fish, Sea cucumber and Tube worms.</em><br>
+        <div class="appearAnimation5 paragraph Hadalpelagic"><em>Starfish, Liparid fish, Sea cucumber and Tube worms.</em><br>
             Deepest point at the bottom of Mariana Trench of the Pacific Ocean in Japan.<br>
 The temperature is marginally above freezing, and no natural light reaches this zone. The pressure is an incredible eight tons per square inch. 
 </div>
+    <img src="https://cdn.discordapp.com/attachments/1251200523604852830/1302720737819361361/ufo.png?ex=672924bb&is=6727d33b&hm=e0fae319315339710ce31da9e36489a6286c5d4bba2e58a3610fc02737e0d6ae&" alt="UFO" width="500"
+    class="pop-image">
     </div>
+
 
     <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
 
-
 </body>
 </html>
-

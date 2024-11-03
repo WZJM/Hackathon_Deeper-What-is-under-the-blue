@@ -1,3 +1,11 @@
+function author () {
+  alert("Becky Liu and Joshua Wu\nFrom Citadel High School")
+}
+
+function about () {
+  alert("2 days Hackathon project\nhttps://harbourhacks.com/")
+}
+
 document.addEventListener("scroll", function(){
   const animatedText = document.querySelector(".appearAnimation1")
   const rect = animatedText.getBoundingClientRect();
@@ -55,23 +63,5 @@ document.addEventListener("scroll", function(){
   }
   else {
     animatedText.classList.remove("in-view");    
-  }
-});
-
-function author () {
-  alert("Becky Liu and Joshua Wu\nFrom Citadel High School")
-}
-
-function about () {
-  alert("2 days Hackathon project")
-}
-
-document.addEventListener("scroll", function () {
-  const slidePopImage = document.querySelector(".slide-pop-image");
-  const rect = slidePopImage.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-  if (rect.top <= windowHeight && rect.bottom >= 0) {
-      slidePopImage.classList.add("slide-pop-image"); // Trigger the animation
   }
 });
