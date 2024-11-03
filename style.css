@@ -1,10 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --clr-dark: #070a12;
+    --clr-light: #68bccf;
+    --clr-accent: #284264;
+    --clr-rgba: #83aedf;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    padding: 50px;
-    background: linear-gradient(to bottom, #6eb5ff, #4a83d3, #2a64b4, #093c81);
-    min-height: 100vh; /* Ensure it covers the full height of the viewport */
-    margin: 0;
+    margin: 0; 
+    padding: 0;
+}
+
+/* Blank Area */
+.blank-area {
+    height: 50px; /* Height of the blank area */
+    background-color: #383877; /* Background color for the blank area */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+/* Gradient Background */
+.gradient-background {
+    height: calc(100vh - 50px); /* Full viewport height minus the blank area */
+    background: linear-gradient(to bottom, #ffffff, #4a83d3, #2a64b4, #093c81);
+    width: 100%; /* Ensure it takes the full width */
+}
+
+
+
+a.author:hover, a.author:active {
+    color: rgb(49, 18, 83);
+    font-size: 150%;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition */
 }
 
 h1 {
@@ -14,4 +47,22 @@ h1 {
 button {
     padding: 10px 20px;
     font-size: 16px;
+}
+
+.Author {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color:var(--clr-accent);
+    background-color: var(--clr-rgba);
+    border: 7px solid var(--clr-accent);
+    border-radius: 5px;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.Author:hover {
+    transform: translateY(-10px);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
 }
