@@ -93,11 +93,39 @@ button {
 .Title {
     color: #dde3f8;
 }
-@keyframes Appear{
+@keyframes appear {
+    from {
+        transform: translateY(0);
+    }
     
-    
+    to {
+        transform: translateY(-100px);
+    }
 }
 
-.SunligthZoneParagraph{
-    font-size:25px;
+.appearAnimation1.in-view {
+animation: appear 1s ease both;
 }
+
+.appearAnimation2.in-view {
+    animation: appear 1s ease both;
+    }
+.paragraph {
+    font-size:20px;
+    text-align:left;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/*.aniamted-text{
+    position: absolute;
+    transform: translateY(-100px);
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.aniamted-text.in-view{
+    transform: (0);
+    opacity: 1;
+}
+*/
