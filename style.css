@@ -20,16 +20,25 @@
 
 /* Blank Area */
 .blank-area {
-    height: 50px; /* Height of the blank area */
+    height: 100px; /* Height of the blank area */
     background-color: #383877; /* Background color for the blank area */
     width: 100%; /* Ensure it takes the full width */
+    position: relative;
 }
 
 /* Gradient Background */
 .gradient-background {
-    height: calc(100vh - 50px); /* Full viewport height minus the blank area */
-    background: linear-gradient(to bottom, #ffffff, #4a83d3, #2a64b4, #093c81);
+    margin: 0;
+    height:max-content; 
+    bottom: 0;
+    background: linear-gradient(to bottom, #ffffff, #578dd8, #194583, #020f22);
     width: 100%; /* Ensure it takes the full width */
+}
+
+.info-background {
+    background-color: #68bccf;
+    position: relative;
+    height: 100px;;
 }
 
 
@@ -61,8 +70,25 @@ button {
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 .Author:hover {
     transform: translateY(-10px);
     background-color: var(--clr-accent);
     color: var(--clr-light);
+}
+
+.BathypelagicZone {
+    color:#c6ccdf
+}
+
+.Title {
+    color: #dde3f8;
 }
