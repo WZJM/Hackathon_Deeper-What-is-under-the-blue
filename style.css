@@ -1,3 +1,18 @@
+:root {
+    --clr-dark: #070a12;
+    --clr-light: #68bccf;
+    --clr-accent: #284264;
+    --clr-rgba: #83aedf;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
 
 :root {
     --clr-dark: #070a12;
@@ -52,12 +67,128 @@ a.author:hover, a.author:active {
 
 h1 {
     color: #1a1a1a;
+    margin: 0; 
+    padding: 0;
+}
+
+/* Blank Area */
+.blank-area {
+    height: 100px; /* Height of the blank area */
+    background-color: #383877; /* Background color for the blank area */
+    width: 100%; /* Ensure it takes the full width */
+    position: relative;
+}
+
+/* Gradient Background */
+.gradient-background {
+    margin: 0;
+    height:max-content; 
+    bottom: 0;
+    background: linear-gradient(to bottom, #ffffff, #578dd8, #194583, #020f22);
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.info-background {
+    background-color: #68bccf;
+    position: relative;
+    height: 100px;;
+}
+
+
+
+a.author:hover, a.author:active {
+    color: rgb(49, 18, 83);
+    font-size: 150%;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition */
+}
+
+h1 {
+    color: #1a1a1a;
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
 }
+
+.Author {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color:var(--clr-accent);
+    background-color: var(--clr-rgba);
+    border: 7px solid var(--clr-accent);
+    border-radius: 5px;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.Author:hover {
+    transform: translateY(-10px);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+
+.BathypelagicZone {
+    color:#c6ccdf
+}
+
+.Title {
+    font-weight: 700;
+    color: #dde3f8;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.subTitle {
+    font-weight: 600;
+    color: #dde3f8;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.pop-text {
+    font-size: 20px;
+    display: inline-block;
+    animation: popAnimation 0.5s ease-in infinite;
+}
+
+@keyframes popAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.pop-image {
+    font-size: 20px;
+    display: inline-block;
+    animation: popImageAnimation 1s ease-in infinite;
+}
+
+@keyframes popImageAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* -- slide image -- */
 
 .Author {
     font-size: 1.5rem;
@@ -131,16 +262,4 @@ animation: appear 1s ease forwards;
     margin-left: 150px;
     margin-right: 150px;
 }
-
-/*.aniamted-text{
-    position: absolute;
-    transform: translateY(-100px);
-    opacity: 1;
-    transition: all 1s ease;
-}
-
-.aniamted-text.in-view{
-    transform: (0);
-    opacity: 1;
-}
-*/
+  }

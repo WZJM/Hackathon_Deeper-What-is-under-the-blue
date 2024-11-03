@@ -57,66 +57,21 @@ document.addEventListener("scroll", function(){
     animatedText.classList.remove("in-view");    
   }
 });
-/*document.addEventListener("scroll", handleScroll);
 
-function handleScroll() {
-    const rect = animatedText.getBoundingClientRect();
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-    if (rect.top <= windowHeight && rect.bottom >= 0) {
-        animatedText.classList.add("in-view");
-        document.removeEventListener("scroll", handleScroll);
-    }
+function author () {
+  alert("Becky Liu and Joshua Wu\nFrom Citadel High School")
 }
-*/
 
-/*const animatedText1 = document.querySelector(".appearAnimation1")
+function about () {
+  alert("2 days Hackathon project")
+}
 
-function handleScroll() {
-  const rect = animatedText1.getBoundingClientRect();
+document.addEventListener("scroll", function () {
+  const slidePopImage = document.querySelector(".slide-pop-image");
+  const rect = slidePopImage.getBoundingClientRect();
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-  
-  if (rect.top <= windowHeight && rect.bottom >= 0){
-    animatedText1.classList.add("in-view");
 
-    document.removeEventListener("scroll", handleScroll);
+  if (rect.top <= windowHeight && rect.bottom >= 0) {
+      slidePopImage.classList.add("slide-pop-image"); // Trigger the animation
   }
-}
-document.addEventListener("scroll", handleScroll)
-
-
-
-
-const animatedText2 = document.querySelector(".appearAnimation2")
-
-function handleScroll() {
-  const rect = animatedText2.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-  
-  if (rect.top <= windowHeight && rect.bottom >= 0){
-    animatedText2.classList.add("in-view");
-
-    document.removeEventListener("scroll", handleScroll);
-  }
-}
-document.addEventListener("scroll", handleScroll)
-
-
-
-const animatedText3 = document.querySelector(".appearAnimation3")
-
-function handleScroll() {
-  const rect = animatedText3.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-  
-  if (rect.top <= windowHeight && rect.bottom >= 0){
-    animatedText3.classList.add("in-view");
-
-    document.removeEventListener("scroll", handleScroll);
-  }
-}
-
-      
-document.addEventListener("scroll", handleScroll)
-
-*/
+});
