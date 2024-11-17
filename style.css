@@ -142,11 +142,11 @@ button {
 
 @keyframes appear {
     from {
-        transform: translateY(0);
+        transform: translateY(100px);
     }
     
     to {
-        transform: translateY(-100px);
+        transform: translateY(0);
     }
 }
 
@@ -200,4 +200,8 @@ animation: appear 1s ease forwards;
 
 .Hadalpelagic {
     color: #cdceef;
+}
+.UFO {
+    color: #e6e7f6;
+    ;
 }
